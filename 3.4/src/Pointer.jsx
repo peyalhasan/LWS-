@@ -34,7 +34,7 @@ const Pointer = () => {
                 top: -10,
                 width: 20,
                 height: 20,
-                transform: ` translate(${position.x}px, ${position.y}px)`
+                transform: ` translate(${position.x}px, ${position.y}px)`,
             }}
 
             >
