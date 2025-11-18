@@ -20,7 +20,7 @@ const Pointer = () => {
             style={{
                 position: 'relative',
                 width: '100vw',
-                height: '100vh',
+                height: '40vh',
             }}
             onPointerMove={handlePointerMove}
        >
