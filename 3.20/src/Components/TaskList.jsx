@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
 import Task from './Task';
-import { DispatchContext, HandleContext } from '../Context/Contex';
+import { HandleContext } from '../Context/Contex';
 
 const TaskList = () => {
-    const tasks= useContext(HandleContext);
+
+    const tasks = useContext(HandleContext)
 
     return (
         <div>

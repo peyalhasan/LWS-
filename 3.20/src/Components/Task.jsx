@@ -1,10 +1,9 @@
-import React, { useContext, useState } from 'react';
-import { DispatchContext } from '../Context/Contex';
+import React, { useState } from 'react';
+import { DispatchContext, useTaskDispatch } from '../Context/Contex';
 
 const Task = ({ task }) => {
     const [isEditing, setIsEditing] = useState(false);
-    const dispatch = useContext(DispatchContext)
-
+    const dispatch = useTaskDispatch(DispatchContext)
     const handleEditSave = () => {
         setIsEditing(!isEditing)
     }
