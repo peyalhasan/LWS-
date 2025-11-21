@@ -1,0 +1,15 @@
+
+
+// add
+    setTasks()
+
+
+// change
+    const nextTask = 
+    setTasks(nextTask)
+
+
+
+
+// delete
+   setTasks()
