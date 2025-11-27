@@ -1,16 +1,16 @@
-import { useRef } from "react";
+import { useRef } from 'react';
 
 export default function Counter() {
-    let ref = useRef(0)
-    
+  let countRef = useRef(0);
+
   function handleClick() {
-    ref.current = ref.current + 1;
-    alert('You clicked ' + ref.current + "")
+    // This doesn't re-render the component!
+    countRef.current = countRef.current + 1;
   }
 
   return (
     <button onClick={handleClick}>
-      Click me!
+      You clicked {countRef.current} times
     </button>
   );
 }
