@@ -5,6 +5,7 @@ import Counters from './Components/Counters'
 import Focus from './Components/Focus'
 import MapComponent from './Components/Map'
 import StopWatch from './Components/StopWatch'
+import TodoList from './Components/TodoList'
 import UseRef from './Components/UseRef'
 
 
@@ -18,7 +19,8 @@ function App() {
    <CatFriends />
    <MapComponent />
    <Focus /> */}
-   <Counters />
+   {/* <Counters /> */}
+   <TodoList />
    </>
   )
 }

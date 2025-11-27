@@ -59,13 +59,11 @@ button {
   margin: .25rem;
 }
 
-ul,
-li {
-  list-style: none;
-  white-space: nowrap;
+code {
+  font-size: 1.2em;
 }
 
-li {
-  display: inline;
-  padding: 0.5rem;
+ul {
+  padding-inline-start: 20px;
 }
+
