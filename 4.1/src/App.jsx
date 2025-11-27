@@ -14,9 +14,9 @@ function App() {
    <UseRef />
    <Counter />
    <StopWatch />
-   <Focus />
    <CatFriends />
    <MapComponent />
+   <Focus />
    </>
   )
 }

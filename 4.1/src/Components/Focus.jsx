@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import MyInput from './MyInput';
 
 export default function Focus() {
   const inputRef = useRef(null);
@@ -6,10 +7,10 @@ export default function Focus() {
     function handleFocusInput(){
         inputRef.current.focus()
     }
-
+ 
   return (
     <>
-    <input ref={inputRef} type="text" name="" id="" />
+    <MyInput  ref={inputRef} />
     <button onClick={handleFocusInput}>Focus the input</button>
 
     </>
