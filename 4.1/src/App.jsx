@@ -1,6 +1,7 @@
 import './App.css'
 import CatFriends from './Components/CatFriends'
 import Counter from './Components/Counter'
+import Counters from './Components/Counters'
 import Focus from './Components/Focus'
 import MapComponent from './Components/Map'
 import StopWatch from './Components/StopWatch'
@@ -11,12 +12,13 @@ function App() {
 
   return (
    <>
-   <UseRef />
+   {/* <UseRef />
    <Counter />
    <StopWatch />
    <CatFriends />
    <MapComponent />
-   <Focus />
+   <Focus /> */}
+   <Counters />
    </>
   )
 }
