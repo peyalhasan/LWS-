@@ -8,19 +8,20 @@ import StopWatch from './Components/StopWatch'
 import TodoList from './Components/TodoList'
 import UseRef from './Components/UseRef'
 
-
 function App() {
 
   return (
-   <>
-   {/* <UseRef />
+    <>
+      {/* <UseRef />
    <Counter />
    <StopWatch />
    <CatFriends />
    <MapComponent />
    <Focus /> */}
-   {/* <Counters /> */}
-   <TodoList />
+      {/* <Counters /> */}
+      {/* <TodoList /> */}
+
+
    </>
   )
 }
