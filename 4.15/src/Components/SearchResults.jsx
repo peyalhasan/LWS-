@@ -1,25 +1,13 @@
-import { useEffect } from "react";
 import { useState } from "react";
-import fetchResults from "../utlis/fetResult";
+import useData from "../Hooks/useData";
 
 export default function SearchResults() {
     const [query, setQuery] = useState('');
     const [page, setPage] = useState(1);
-    const [results, setResults] = useState([]);
+    const results = useData(query, page)
 
-    useEffect(()=>{
-        let ignore = false;
-        fetchResults(query, page).then(json => {
-            if(!ignore){
-                setResults(json)
-            }
-        } )
 
-        // cleanup 
-        return() => {
-            ignore = true
-        }
-    }, [query, page])
+
     return (
         <div>
             <div>
