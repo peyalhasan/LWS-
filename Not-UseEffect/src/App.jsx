@@ -1,15 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import CardGame from './Components/CardGame'
+// import CardGame from './Components/CardGame'
+import Example9 from './Components/Subscribe'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-    <CardGame />
+    {/* <CardGame /> */}
+    <Example9 />
     </>
   )
 }
