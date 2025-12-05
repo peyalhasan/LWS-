@@ -3,6 +3,7 @@ import ChatRoom from "./Components/ChatRoom"
 import Form from "./Components/Form"
 import SaveButton from "./Components/SaveButton"
 import StatusBar from "./Components/StatusBar"
+import Welcome from "./Components/Welcome"
 
 function App() {
 
