@@ -24,4 +24,4 @@ const PortalModal = () => {
     );
 };
 
-export default PortalModal;
+export default PortalModal;  

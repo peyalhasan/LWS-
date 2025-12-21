@@ -1,6 +1,7 @@
 
 import './App.css'
 import TraditionalModal from './Components/TraditionalModal'
+import HookPortal from './modal/HookPortal'
 import PortalModal from './modal/portal-modal/PortalModal'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <>
       <TraditionalModal />
       <PortalModal />
+      <HookPortal />
     </>
   )
 }
