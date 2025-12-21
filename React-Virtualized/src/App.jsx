@@ -1,6 +1,6 @@
 import { loremIpsum } from "lorem-ipsum"
 import ListItem from "./Components/ListItem";
-import { List , AutoSizer } from "react-virtualized";
+import { List, AutoSizer } from "react-virtualized";
 
 
 function Apps() {
@@ -44,15 +44,15 @@ function Apps() {
         <div className="App">
             <div className="list ">
                 <AutoSizer>
-                    {({width, height}) =>(
-                <List
-                    width={width}
-                    height={height}
-                    rowHeight={rowHeight}
-                    rowCount={rowCount}
-                    rowRenderer={renderRow}
-                    overscanColumnCount={5}
-                />
+                    {({ width, height }) => (
+                        <List
+                            width={width}
+                            height={height}
+                            rowHeight={rowHeight}
+                            rowCount={rowCount}
+                            rowRenderer={renderRow}
+                            overscanColumnCount={5}
+                        />
                     )}
                 </AutoSizer>
 
