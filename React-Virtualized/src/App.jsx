@@ -1,13 +1,12 @@
 import { loremIpsum } from "lorem-ipsum"
-import ListItem from "./Components/ListItem"
-import { List } from "react-virtualized";
+import ListItem from "./Components/ListItem";
+import { List , AutoSizer } from "react-virtualized";
 
-function App() {
-    const rowCount = 50000;
 
-    const listHight = 500;
-    const rowHeight = 50;
-    const rowWidth = 700;
+function Apps() {
+    const rowCount = 1000022;
+
+    const rowHeight = 80;
 
 
     const list = Array(rowCount)
@@ -29,31 +28,33 @@ function App() {
 
 
     function renderRow({ index, key, style }) {
-        {
-            list.map((item) => (
-                <ListItem
-                    key={key}
-                    name={item[index].name}
-                    title={item[index].text}
-                    image={item[index].image}
-                    style={style}
-                />
-            ))
-        }
+
+        return (
+            < ListItem
+                key={key}
+                name={list[index].name}
+                title={list[index].text}
+                image={list[index].image}
+                style={style}
+            />
+        )
     }
 
     return (
-        <div>
-            <div className="App ">
-
+        <div className="App">
+            <div className="list ">
+                <AutoSizer>
+                    {({width, height}) =>(
                 <List
-                    width={rowWidth}
-                    height={listHight}
+                    width={width}
+                    height={height}
                     rowHeight={rowHeight}
                     rowCount={rowCount}
                     rowRenderer={renderRow}
-
+                    overscanColumnCount={5}
                 />
+                    )}
+                </AutoSizer>
 
 
             </div>
@@ -61,4 +62,4 @@ function App() {
     )
 }
 
-export default App
+export default Apps

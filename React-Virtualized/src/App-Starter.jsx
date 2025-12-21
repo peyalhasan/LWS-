@@ -2,7 +2,7 @@ import { loremIpsum } from "lorem-ipsum"
 import ListItem from "./Components/ListItem"
 
 function App() {
-  const rowCount = 500
+  const rowCount = 50000
   const list = Array(rowCount)
     .fill()
     .map((val, id) => {
